@@ -1,0 +1,354 @@
+@import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
+
+input {
+  all: unset;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+button {
+  background-color: white;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+form {
+  width: 100%;
+}
+
+.nweet-input::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.formBtn {
+  width: 100%;
+  padding: 7px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  background-color: #04aaff;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  cursor: pointer;
+  background-color: tomato;
+}
+
+.logOut {
+  margin-top: 20px;
+}
+
+/* Nwitter Factory */
+
+.factoryForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.factoryInput__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.factoryInput__input {
+  flex-grow: 1;
+  height: 40px;
+  padding: 0px 20px;
+  color: white;
+  border: 1px solid #04aaff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.factoryInput__arrow {
+  position: absolute;
+  right: 0;
+  background-color: #04aaff;
+  height: 40px;
+  width: 40px;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.factoryInput__label {
+  color: #04aaff;
+  cursor: pointer;
+}
+
+.factoryInput__label span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.factoryForm__attachment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.factoryForm__attachment img {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+}
+
+.factoryForm__clear {
+  color: #04aaff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.factoryForm__clear span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+/* Nweet */
+
+.nweetEdit .formBtn {
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.nweet {
+  margin-bottom: 20px;
+  background-color: white;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.8);
+  word-break: break-all;
+}
+
+.nweet img {
+  width: 30%;
+  height: width;
+  margin-top: 5px;
+}
+
+.nweet__actions {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.nweet__actions span {
+  cursor: pointer;
+}
+
+.nweet__actions span:first-child {
+  margin-right: 10px;
+}
+
+/* Auth */
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.authBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+}
+
+.authBtn {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 0px;
+  font-size: 12px;
+  text-align: center;
+  width: 150px;
+  background: white;
+  cursor: pointer;
+}
+
+/* AuthForm */
+
+.authInput {
+  max-width: 320px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: black;
+  box-sizing: content-box;
+}
+
+.authSubmit {
+  text-align: center;
+  background: #04aaff;
+  color: white;
+  margin-top: 10px;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.authError {
+  color: tomato;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.authSwitch {
+  color: #04aaff;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: block;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+/* Profile Page */
+
+.profileForm {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.profile img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+}
+
+.profile_label {
+  display: flex;
+  color: #04aaff;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  margin: 0% 25%;
+}
+.nweet h3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.nweet_text {
+  font-size: 16px;
+}
+
+.nweet_display_name {
+  display: inline-block;
+  margin-left: -5%;
+  margin-top: -5%;
+}
+
+.display_time {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 100;
+  right: 10px;
+  bottom: 10px;
+}
+.lineChange {
+  white-space: pre-wrap;
+}
+.nweet__bottomBox {
+  display: flex;
+  flex-direction: row;
+}
+.nweet__rep {
+  position: absolute;
+  left: 10px;
+  bottom: 11px;
+}
+.repContainer {
+  display: flex;
+}
+
+.replyBox {
+  display: flex;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  margin-left: 4%;
+  background-color: rgb(192, 132, 120);
+  width: 80%;
+  max-width: 256px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.8);
+  word-break: break-all;
+}
+.repArrow {
+  margin-left: 6%;
+  margin-top: -15px;
+  display: flex;
+  width: 10%;
+  max-width: 64px;
+  height: 30px;
+  background-color: rgb(192, 132, 120);
+  border-radius: 50%;
+}
